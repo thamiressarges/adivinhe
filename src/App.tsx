@@ -16,7 +16,7 @@ export default function App(){
 
   const [score, setScore] = useState(0)
   const [letter, setLetter] = useState('')
-  const [letterUsed, setLetterUsed] = useState<LetterUsedProps>([])
+  const [letterUsed, setLetterUsed] = useState<LetterUsedProps[]>([])
   const [challenge, setChallenge] = useState<Challenge | null>(null)
 
   
