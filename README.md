@@ -1,75 +1,107 @@
-# React + TypeScript + Vite
+# 🎮 Jogo de Adivinhar Palavras
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um jogo interativo desenvolvido com **React, TypeScript e CSS**, no qual o jogador precisa descobrir uma palavra secreta digitando letras e utilizando as dicas disponíveis.
 
-Currently, two official plugins are available:
+## 🚀 Demonstração
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Acesse o projeto online:
 
-## React Compiler
+👉 **[Jogar agora](https://adivinhe-seven-iota.vercel.app)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🖥️ Tecnologias utilizadas
 
-## Expanding the ESLint configuration
+- React
+- TypeScript
+- Vite
+- CSS Modules
+- JavaScript
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🎯 Funcionalidades
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Sorteio aleatório de palavras.
+- Exibição de dicas para ajudar o jogador.
+- Entrada de letras para tentar descobrir a palavra.
+- Identificação de letras corretas e incorretas.
+- Histórico das letras utilizadas.
+- Sistema de pontuação baseado nos acertos.
+- Contador de tentativas.
+- Condições de vitória e derrota.
+- Opção para reiniciar a partida.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📸 Capturas de tela
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+<!-- Adicione aqui imagens do projeto -->
 
+## ⚙️ Como executar o projeto localmente
+
+### Pré-requisitos
+
+- Node.js instalado.
+- npm ou outro gerenciador de pacotes.
+
+### Instalação
+
+1. Clone este repositório:
+
+```bash
+git clone URL_DO_REPOSITORIO
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+2. Acesse a pasta do projeto:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+cd NOME_DO_PROJETO
 ```
+
+3. Instale as dependências:
+
+```bash
+npm install
+```
+
+4. Execute o projeto:
+
+```bash
+npm run dev
+```
+
+5. Acesse no navegador o endereço indicado pelo Vite, geralmente:
+
+```text
+http://localhost:5173
+```
+
+## 📁 Estrutura do projeto
+
+```text
+src/
+├── components/
+│   ├── Button/
+│   ├── Header/
+│   ├── Input/
+│   ├── Letter/
+│   ├── LetterUsed/
+│   └── Tip/
+├── utils/
+│   └── words.ts
+├── App.tsx
+├── app.module.css
+└── main.tsx
+```
+
+## 🧠 Objetivo do projeto
+
+Este projeto foi desenvolvido com o objetivo de praticar conceitos importantes do desenvolvimento front-end, como:
+
+- Criação e reutilização de componentes.
+- Gerenciamento de estados com React Hooks.
+- Tipagem com TypeScript.
+- Manipulação de arrays e strings.
+- Renderização condicional.
+- Organização e reutilização de estilos.
+- Lógica de programação.
+
+
+---
+
+⭐ Se gostou do projeto, deixe uma estrela no repositório!
